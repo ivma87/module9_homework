@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- <script src="script.js"></script> -->
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="requests">
+    <div class="request page_num">
+      <h3 class="requestHeader">Номер страницы</h3>
+      <input id="j-input-1" class="input j-input-1" type="text" name="input1" value="2" onfocus="this.value=''"
+        placeholder="Номер страницы">
+    </div>
+    <div class="request limit">
+    <h3 class="requestHeader">Лимит</h3>
+    <input id="j-input-2" class="input j-input-2" type="text" name="input2" value="3" onfocus="this.value=''" placeholder="Лимит">
+  </div>
+
+ 
+  </div>
+  <button class="btn j-btn-request">Запрос</button>
+
+  <div class="result j-result">Здесь будет результат запроса</div></br>
+
+  
+
+  <h1>HW9_4</h1>
+  <p>
+  <div>
+    Написать код приложения, интерфейс которого состоит из двух input и кнопки. В input можно ввести любое число</div>
+  <ul>
+    <li>Заголовок первого input — «номер страницы».
+    <li>Заголовок второго input — «лимит».
+    <li>Заголовок кнопки — «запрос».
+  </ul>
+  <div>При клике на кнопку происходит следующее:</div>
+
+  <ul>
+    <li>Если число в первом input не попадает в диапазон от 1 до 10 или не является числом — выводить ниже текст «Номер
+      страницы вне диапазона от 1 до 10»;
+    <li>Если число во втором input не попадает в диапазон от 1 до 10 или не является числом — выводить ниже текст «Лимит
+      вне диапазона от 1 до 10»;
+    <li>Если и первый, и второй input не в диапазонах или не являются числами — выводить ниже текст «Номер страницы и
+      лимит вне диапазона от 1 до 10»;
+    <li>Если числа попадают в диапазон от 1 до 10 — сделать запрос по URL https://picsum.photos/v2/list?page=1&limit=10,
+      где GET-параметр page — это число из первого input, а GET-параметр limit — это введённое число второго input.
+  </ul>
+  </p>
+
+</body>
+<script src="script.js"></script>
+
+</html>

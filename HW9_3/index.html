@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- <script src="script.js"></script> -->
+  <title>Document</title>
+</head>
+
+<body>
+
+<h1>HW9_3</h1>
+
+<p>
+  <div>Напишите код приложения, интерфейс которого представляет собой 2 input и кнопку submit. В input можно ввести любое число.</div>
+
+При клике на кнопку происходит следующее:
+<ul>
+<li>Если оба числа не попадают в диапазон от 100 до 300 или введено не число — выводить ниже текст «одно из чисел вне диапазона от 100 до 300»;
+<li>Если числа попадают в диапазон от 100 до 300 — сделать запрос c помощью fetch по URL https://picsum.photos/200/300, где первое число — ширина картинки, второе — высота.
+  </ul>
+  
+<!--   <div>Механизм работы приложения</div>
+  <ol>
+    <li>Создаем функцию <em>useRequest</em>, которая будет осуществлять запрос</li>
+    <li>Создаем функцию <em>displayResult</em> для сборки карточек и вставки на страницу</li>
+    <li>Ищем элементы кнопки и блока с результатом</li>
+    <li>Вешаем обработчик <em>click</em> на кнопку, который делает запрос с помощью функции <em>useRequest</em>, результат запроса выводит на страницу с помощью функции <em>displayResult</em></li>
+  </ol>
+<ol>
+<li>Если число не попадает в диапазон от 1 до 10 — выводить ниже текст «число вне диапазона от 1 до 10».</li>
+<li>Если число попадает в диапазон от 1 до 10 — сделать запрос c помощью XHR по URL https://picsum.photos/v2/list?limit=10, где get-параметр limit — это введённое число.</li>
+</ol> -->
+</p>
+
+<!-- A basic input -->
+<input class="input j-input-1" type="text" name="input1" value="200" onfocus="this.value=''" placeholder="Type here width">
+<input class="input j-input-2" type="text" name="input2" value="300" onfocus="this.value=''" placeholder="Type here height">
+
+<button class="btn j-btn-request">Запрашиваем данные</button>
+
+<div class="result j-result">Здесь будет результат запроса</div></br>
+<!-- <div class="imgjs j-img" src="https://picsum.photos/200/200"></div> -->
+</body>
+<script src="script.js"></script>
+
+</html>
